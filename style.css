@@ -506,7 +506,7 @@ a {
 }
 
 /* Responsive: Mobile */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .container {
     width: 99%;
     max-width: 100vw;
