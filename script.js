@@ -136,6 +136,25 @@ document.querySelectorAll('.project-card').forEach(card => {
 
 // Scroll-to-top button
 
+const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+// Show button when scrolling down
+window.addEventListener('scroll', () => {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    scrollTopBtn.style.display = 'block';
+  } else {
+    scrollTopBtn.style.display = 'none';
+  }
+});
+
+// Scroll to top smoothly
+scrollTopBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
 // Dark mode toggle
 let darkToggle = document.getElementById('darkModeToggle');
 if (!darkToggle) {
