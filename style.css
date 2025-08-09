@@ -468,6 +468,17 @@ a {
   font-weight: 500;
 }
 
+#navbarLinks.active {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.navbar nav ul {
+  display: none;
+}
+
 /* Footer */
 .footer {
   background: #222;

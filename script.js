@@ -1,20 +1,37 @@
 // Navbar hamburger menu toggle with close icon
 const navbarToggle = document.getElementById('navbarToggle');
 const navbarLinks = document.getElementById('navbarLinks');
+
 if (navbarToggle && navbarLinks) {
+  const hamburgerIcon = navbarToggle.querySelector('.hamburger-icon');
   const closeIcon = navbarToggle.querySelector('.close-icon');
+
   navbarToggle.addEventListener('click', () => {
     const isOpen = navbarLinks.classList.toggle('active');
     navbarToggle.classList.toggle('open', isOpen);
+
+    // Toggle icon visibility
+    if (isOpen) {
+      hamburgerIcon.style.display = 'none';
+      closeIcon.style.display = 'block';
+    } else {
+      hamburgerIcon.style.display = 'block';
+      closeIcon.style.display = 'none';
+    }
   });
-  // Optional: close menu when a link is clicked (mobile UX)
+
+  // Close menu when a link is clicked
   navbarLinks.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       navbarLinks.classList.remove('active');
       navbarToggle.classList.remove('open');
+
+      hamburgerIcon.style.display = 'block';
+      closeIcon.style.display = 'none';
     });
   });
 }
+
 // Smooth scroll for navigation links
 document.querySelectorAll('.navbar nav ul li a').forEach(link => {
   link.addEventListener('click', function(e) {
@@ -27,6 +44,7 @@ document.querySelectorAll('.navbar nav ul li a').forEach(link => {
     }
   });
 });
+
 
 // Contact form handling
 const contactForm = document.getElementById('contactForm');
@@ -117,35 +135,6 @@ document.querySelectorAll('.project-card').forEach(card => {
 });
 
 // Scroll-to-top button
-let scrollBtn = document.getElementById('scrollToTopBtn');
-if (!scrollBtn) {
-  scrollBtn = document.createElement('button');
-  scrollBtn.id = 'scrollToTopBtn';
-  scrollBtn.textContent = '↑';
-  scrollBtn.style.position = 'fixed';
-  scrollBtn.style.bottom = '30px';
-  scrollBtn.style.right = '30px';
-  scrollBtn.style.padding = '0.7rem 1rem';
-  scrollBtn.style.fontSize = '1.5rem';
-  scrollBtn.style.background = '#00bfae';
-  scrollBtn.style.color = '#fff';
-  scrollBtn.style.border = 'none';
-  scrollBtn.style.borderRadius = '50%';
-  scrollBtn.style.cursor = 'pointer';
-  scrollBtn.style.display = 'none';
-  scrollBtn.style.zIndex = 10000;
-  document.body.appendChild(scrollBtn);
-}
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 300) {
-    scrollBtn.style.display = 'block';
-  } else {
-    scrollBtn.style.display = 'none';
-  }
-});
-scrollBtn.addEventListener('click', () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});
 
 // Dark mode toggle
 let darkToggle = document.getElementById('darkModeToggle');
@@ -155,7 +144,7 @@ if (!darkToggle) {
   darkToggle.textContent = '🌙';
   darkToggle.style.position = 'fixed';
   darkToggle.style.top = '30px';
-  darkToggle.style.right = '30px';
+  darkToggle.style.right = '60px';
   darkToggle.style.padding = '0.5rem 1rem';
   darkToggle.style.fontSize = '1.2rem';
   darkToggle.style.background = '#222';
