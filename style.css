@@ -468,7 +468,7 @@ a {
   font-weight: 500;
 }
 
-#navbarLinks.active {
+#navbarLinks.active a{
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
