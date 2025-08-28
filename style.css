@@ -691,7 +691,7 @@ a {
     height: 64px;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid #ff9800;
+    border: 3px solid #009f8f;
     margin-bottom: 1rem;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
@@ -706,6 +706,6 @@ a {
 .testimonial-name {
     font-size: 1.1rem;
     font-weight: bold;
-    color: #ff9800;
+    color: #009f8f;
     margin: 0;
 }
