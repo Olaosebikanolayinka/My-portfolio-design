@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Olaosebikan olayinka</title>
+    <title> Mysticker</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="navbar">
         <div class="container">
-            <h1 class="logo">Olaosebikan Olayinka</h1>
+            <div class="logo-container">
+            <img src="mylogo.png" alt="Logo">
+            <h1 class="logo">Mysticker</h1>
+            
             <nav>
                 <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle navigation">
                     <span class="bar"></span>
@@ -24,8 +27,9 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            </div>
             <div class="social-icons">
-                <a href="https://x.com/ebeneza66" title="Twitter"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="Twitter" /></a>
+                <a
                 <a href="https://linkedin.com/in/olaosebikanolayinka" title="LinkedIn"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" /></a>
                 <a href="https://github.com/olayinkabolu97" title="GitHub"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" /></a>
             </div>
@@ -34,9 +38,9 @@
 
     <section id="home" class="hero-section reveal">
         <div class="container">
-            <h2>Hello, I'm <span class="highlight">Olaosebikan Olayinka</span></h2>
-            <p class="subtitle">a creative web developer who builds clean, responsive, and user-friendly websites. I love turning ideas into functional web experiences using HTML, CSS, and JavaScript. Check out my projects below!</p>
-            <a href="#projects" class="btn">View My Work</a>
+            <h2>Hello, I'm <span class="highlight">Ebenezer</span></h2>
+            <p class="subtitle">a creative web developer and a graphic designer who builds clean, responsive, and user-friendly websites. I love turning ideas into functional web experiences using HTML, CSS, and JavaScript. Check out my projects below!</p>
+            <a href="https://t.me/mysticker012" class="btn">View My Work</a>
             <a href="Olaosebikan olayinka .pdf.pdf" class="btn btn-secondary" download>Download Resume</a>
         </div>
     </section>
@@ -44,7 +48,7 @@
     <section id="about" class="about-section reveal">
         <div class="container">
             <h2>About Me</h2>
-            <p>Write a short bio about yourself, your skills, and your experience.</p>
+            <p>I am developer who is very good with the with following languages</p>
             <div class="skills">
                 <div class="skill-bar-container">
                     <span>HTML</span>
@@ -58,6 +62,14 @@
                     <span>JavaScript</span>
                     <div class="skill-bar-bg"><div class="skill-bar" data-skill="80"></div></div>
                 </div>
+                <div class="skill-bar-container">
+                    <span>React</span>
+                    <div class="skill-bar-bg"><div class="skill-bar" data-skill="80"></div></div>
+                </div>
+                <div class="skill-bar-container">
+                    <span>Figma design</span>
+                    <div class="skill-bar-bg"><div class="skill-bar" data-skill="80"></div></div>
+                </div>
                 <!-- Add more skills as needed -->
             </div>
         </div>
@@ -69,34 +81,69 @@
             <div class="project-filters">
                 <button class="btn filter-btn" data-filter="all">All</button>
                 <button class="btn filter-btn" data-filter="web">Web</button>
-                <button class="btn filter-btn" data-filter="api">API</button>
+                <button class="btn filter-btn" data-filter="api">Dapp</button>
+                <button class="btn filter-btn" data-filter="api">Design & Artwork</button>
+                <button class="btn filter-btn" data-filter="api">E-commerce</button>
             </div>
             <div class="projects-grid">
                 <div class="project-card" data-category="web api" tabindex="0">
-                    <h3>Weather App</h3>
-                    <p>A web app that fetches and displays real-time weather data for any city using a public API. Features search, temperature, and weather icons.</p>
-                    <a href="#" class="btn btn-secondary">View Project</a>
+                    <h3>Graphic work</h3>
+                    <p>Curious to see what I’ve been working on? Take a look</p>
+                    <a href="https://t.me/mysticker012" class="btn btn-secondary">View Project</a>
                 </div>
-                <div class="project-card" data-category="web" tabindex="0">
-                    <h3>Portfolio Website</h3>
-                    <p>A personal portfolio website to showcase your work, skills, and contact information. Responsive and modern design.</p>
-                    <a href="#" class="btn btn-secondary">View Project</a>
+                <div class="project-card" id="work-link" data-category="web" tabindex="0">
+                    <h3>Crypto Project websites</h3>
+                    <p>Here are list of project i have designed and their webpages link</p>
+                    
+                    <div class="project-link">
+                    <a href="https://monsterra.io/">Monsterra</a>
+                    <a href="https://midasonbase.com/">Midasonbase</a>
+                    <a href="https://www.nakago.xyz/">Nakago</a>
+                    <a href="https://www.rollbacklabs.com/">Rollback</a>
+                    <a href="https://www.telgather.com/">Telgather</a>
+                    </div>
                 </div>
                 <!-- Add more project cards as needed -->
             </div>
         </div>
     </section>
-    <section id="testimonials" class="testimonials-section reveal">
-        <div class="container">
-            <h2>Testimonials</h2>
-            <div class="testimonials">
-                <div class="testimonial">
-                    <p>"Great to work with, delivered on time and exceeded expectations!"</p>
-                    <span>- Client A</span>
+    <section id="testimonial" class="testimonial">
+         <h2>Testimonial</h2>
+        <div class="testimonial-content">
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="testimonial-img">
+                    <p class="testimonial-text">"I’ve worked with different freelancers before, but the experience with Mysticker was by far the best. They combined technical expertise with creativity, 
+                        always keeping my brand’s personality in mind. I’ll definitely return for future projects"</p>
+                    <h4 class="testimonial-name">John Doe</h4>
                 </div>
-                <div class="testimonial">
-                    <p>"Very professional and creative. Highly recommended!"</p>
-                    <span>- Client B</span>
+                <div class="testimonial-card">
+                    <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="User" class="testimonial-img">
+                    <p class="testimonial-text">"What impressed me most was the professionalism and dedication. 
+                        Even when I requested last-minute changes, Mysticker handled them with patience and delivered perfectly."</p>
+                    <h4 class="testimonial-name">Fabio Viera</h4>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://randomuser.me/api/portraits/men/59.jpg" alt="User" class="testimonial-img">
+                    <p class="testimonial-text">"TThis was my first time outsourcing, and I was nervous, but you made the process smooth. Communication was always clear, and the results spoke for themselves—outstanding work"</p>
+                    <h4 class="testimonial-name">Michael Lee</h4>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://randomuser.me/api/portraits/men/68.jpg" alt="User" class="testimonial-img">
+                    <p class="testimonial-text">"Outstanding work! The designs were clean, modern, and perfectly aligned with my brand. 
+                        Communication was smooth and delivery was quick"</p>
+                    <h4 class="testimonial-name">Emily Clark</h4>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="User" class="testimonial-img">
+                    <p class="testimonial-text">"Creative, reliable, and professional. [Your Name] brought my ideas to life and made the whole process stress-free. 
+                        I’ll definitely work with them again."</p>
+                    <h4 class="testimonial-name">Chris Evans</h4>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="User" class="testimonial-img">
+                    <p class="testimonial-text">"I’m really impressed with the attention to detail and creativity. Mysticker didn’t just deliver what I asked for—they went above and beyond."</p>
+                    <h4 class="testimonial-name">Suresh Barot</h4>
                 </div>
             </div>
         </div>
@@ -117,16 +164,16 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 olaosebikanolayinka. All rights reserved.</p>
+            <p>&copy; 2025 Mysticker. All rights reserved.</p>
             <div class="social-icons">
-                <a href="https://x.com/ebeneza66" title="Twitter"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="Twitter" /></a>
+                
                 <a href="https://linkedin.com/in/olaosebikanolayinka" title="LinkedIn"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" /></a>
                 <a href="https://github.com/olayinkabolu97" title="GitHub"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" /></a>
             </div>
         </div>
     </footer>
 
-    <!-- WhatsApp Chat Button with Label on Top -->
+    <!-- WhatsApp Chat Button with Label on Top 
 <div class="whatsapp-container">
   <div class="whatsapp-label">Need a quick response?</div>
   <a href="https://wa.me/2348128290464?text=Hello%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect" 
@@ -135,6 +182,7 @@
     <img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="WhatsApp Chat">
   </a>
 </div>
+-->
    
 <!-- Scroll to Top Button -->
 <button id="scrollTopBtn" title="Go to top">↑</button>
